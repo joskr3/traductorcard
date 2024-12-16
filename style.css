@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.fondo-pagina {
+  background: linear-gradient(to bottom right, #E9D5FF, #C7D2FE);
+  min-height: 100vh;
+}
+
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 48px 16px;
+
+}
+
+.logo-titulo-contenedor {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  color: #9333ea;
+  font-weight: bold;
+}
+
+
+.formulario-contenedor {
+  background: white;
+  padding: 2rem;
+  width: 100%;
+  max-width: 50%;
+  min-width: 5%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E9D5FF;
+  border-radius: 8px;
+  margin-top: 32px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 50%;
+  min-width: 5%;
+}
+
+.etiqueta {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4B5563;
+}
+
+.area-texto {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #D1D5D8;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #111827
+}
+
+.area-texto:focus {
+  outline: none;
+  border-color: #8B5CF6;
+}
+
+
+.idiomas-seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lista-idiomas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.idioma-boton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
