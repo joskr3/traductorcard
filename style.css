@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 
 * {
   margin: 0;
@@ -23,7 +22,6 @@ body {
   min-height: 100vh;
 }
 
-
 .contenedor-principal {
   display: flex;
   flex-direction: column;
@@ -32,7 +30,6 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 48px 16px;
-
 }
 
 .logo-titulo-contenedor {
@@ -45,7 +42,6 @@ h2 {
   color: #9333ea;
   font-weight: bold;
 }
-
 
 .formulario-contenedor {
   background: white;
@@ -86,14 +82,13 @@ h2 {
   border: 1px solid #D1D5D8;
   border-radius: 4px;
   font-size: 1rem;
-  color: #111827
+  color: #111827;
 }
 
 .area-texto:focus {
   outline: none;
   border-color: #8B5CF6;
 }
-
 
 .idiomas-seccion {
   display: flex;
@@ -111,4 +106,28 @@ h2 {
   border: none;
   background: transparent;
   cursor: pointer;
+}
+
+.acciones {
+  margin-top: 16px;
+}
+
+.boton-traducir {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #8B5CF6;
+  color: #FFF;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton-traducir:hover {
+  background: #7C3AED;
+}
+
+.boton-traducir span {
+  font-weight: bold;
 }
