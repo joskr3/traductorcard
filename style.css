@@ -13,11 +13,10 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
-}
-
-.fondo-pagina {
   background: linear-gradient(to bottom right, #E9D5FF, #C7D2FE);
   min-height: 100vh;
 }
@@ -26,27 +25,31 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 48px 16px;
   text-align: center;
 }
 
-.logo-titulo-contenedor {
+header {
   display: flex;
+  background: white;
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
+  padding-bottom: 1.5rem;
+  padding-top: 1rem;
 }
 
-h2 {
+h1 {
   color: #9333ea;
-  font-weight: bold;
 }
 
-.formulario-contenedor {
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
   background: white;
   padding: 2rem;
   width: 100%;
@@ -57,13 +60,6 @@ h2 {
   border-radius: 8px;
   margin-top: 32px;
   text-align: center
-}
-
-.formulario {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 24px;
 }
 
 .campo {
@@ -141,4 +137,9 @@ h2 {
 
 .boton-traducir span {
   font-weight: bold;
+}
+
+footer{
+  display: flex;
+  padding: 1rem;
 }
