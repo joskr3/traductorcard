@@ -9,43 +9,41 @@
 </head>
 
 <body class="fondo-pagina">
-  <div class="contenedor-principal">
-    <div class="logo-titulo-contenedor">
+  <main>
+    <section class="logo-titulo-contenedor">
       <img src="logo.svg" alt="logo">
       <h2>Traductor</h2>
-    </div>
-    <div class="formulario-contenedor">
-      <form id="translationform" class="formulario" action="#" method="post">
-        <div class="campo">
-          <label for="texto" class="etiqueta">Texto para traducir</label>
-          <textarea class="area-texto" name="texto" id="texto" rows="4" placeholder="Ingresa el texto a traducir"></textarea>
+    </section>
+    <form id="translationform" class="formulario formulario-contenedor" action="#" method="post">
+      <section class="campo">
+        <label for="texto" class="etiqueta">Texto para traducir</label>
+        <textarea class="area-texto" name="texto" id="texto" rows="4" placeholder="Ingresa el texto a traducir"></textarea>
+      </section>
+      <section class="idiomas-seccion">
+        <p class="etiqueta">Idiomas</p>
+        <div class="lista-idiomas" id="languageButtons">
+          <button type="button" class="idioma-boton" title="French">
+            <img src="spain.svg" alt="Español">
+          </button>
+          <button name="btn" type="button" class="idioma-boton" title="English">
+            <img src="england.svg" alt="england">
+          </button>
+          <button type="button" class="idioma-boton" title="Language">
+            <img src="france.svg" alt="francia">
+          </button>
+          <button type="button" class="idioma-boton" title="Language">
+            <img src="portugal.svg" alt="portugal">
+          </button>
         </div>
-        <div class="idiomas-seccion">
-          <p class="etiqueta">Idiomas</p>
-          <div class="lista-idiomas" id="languageButtons">
-            <button type="button" class="idioma-boton" title="French">
-              <img src="spain.svg" alt="Español">
-            </button>
-            <button name="btn" type="button" class="idioma-boton" title="English">
-              <img src="england.svg" alt="england">
-            </button>
-            <button type="button" class="idioma-boton" title="Language">
-              <img src="france.svg" alt="francia">
-            </button>
-            <button type="button" class="idioma-boton" title="Language">
-              <img src="portugal.svg" alt="portugal">
-            </button>
-          </div>
-          <div class="acciones">
-            <button type="submit" id="translateButton" class="boton-traducir">
-              <span>Traducir</span>
-              <img src="carga.gif" alt="carga" width="25">
-            </button>
-          </div>
+        <div class="acciones">
+          <button type="submit" id="translateButton" class="boton-traducir">
+            <span>Traducir</span>
+            <img src="carga.gif" alt="carga" width="25">
+          </button>
         </div>
-      </form>
-    </div>
-  </div>
+      </section>
+    </form>
+  </main>
 </body>
 
 </html>
