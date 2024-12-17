@@ -76,6 +76,23 @@ form {
   font-weight: 500;
   color: #4B5563;
 }
+.etiqueta::first-letter {
+  font-size: 42px;
+}
+.etiqueta::before {
+  content: "🏄🏻‍♂️";
+}
+.etiqueta::after{
+  content: "🏄🏻‍♂️";
+}
+
+::selection {
+
+  background-color: yellow;
+
+  color: black;
+
+}
 
 .area-texto {
   width: 100%;
@@ -87,7 +104,7 @@ form {
 }
 
 .area-texto:focus {
-  outline: none;
+  outline: #6120fa;
   border-color: #8B5CF6;
 }
 
@@ -132,7 +149,14 @@ form {
 }
 
 .boton-traducir:hover {
-  background: #7C3AED;
+  background: #6411f2;
+  color: #111827;
+  transition: background 0.3s;
+}
+
+.boton-traducir:active {
+  background: #d7c6f4;
+  color: #111827;
 }
 
 .boton-traducir span {
